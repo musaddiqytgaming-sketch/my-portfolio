@@ -80,6 +80,5 @@ https://my-portfolio-rho-five-48.vercel.app/
 - JavaScript
 - CSS
 - Framer Motion
-- React Icons
 - Node.js
-- MongoDB
+
