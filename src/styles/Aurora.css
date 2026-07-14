@@ -1,0 +1,102 @@
+.aurora{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+    background:#020617;
+
+}
+
+
+.aurora span{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.28;
+
+    animation:move 15s infinite alternate ease-in-out;
+
+}
+
+
+
+.aurora-1{
+
+    width:450px;
+
+    height:450px;
+
+    background:#38bdf8;
+
+    top:-120px;
+
+    left:-120px;
+
+}
+
+
+
+.aurora-2{
+
+    width:500px;
+
+    height:500px;
+
+    background:#8b5cf6;
+
+    right:-150px;
+
+    top:25%;
+
+    animation-duration:20s;
+
+}
+
+
+
+.aurora-3{
+
+    width:420px;
+
+    height:420px;
+
+    background:#06b6d4;
+
+    bottom:-120px;
+
+    left:35%;
+
+    animation-duration:18s;
+
+}
+
+
+
+@keyframes move{
+
+    from{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+    to{
+
+        transform:
+        translate(180px,-120px)
+        scale(1.25);
+
+    }
+
+}

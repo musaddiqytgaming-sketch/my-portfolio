@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import TechStack from "./components/TechStack";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Cursor from "./components/Cursor";
+import Stats from "./components/Stats";
+import Timeline from "./components/Timeline";
+import { useState, useEffect } from "react";
+import Loader from "./components/Loader";
+import Aurora from "./components/Aurora";
+import Terminal from "./components/Terminal";
+
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+  if (loading) {
+    return <Loader />;
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Aurora />
+      <Cursor />
+      <Navbar />
+      <Hero />
+      <Stats />
+      <About />
+      <Terminal />
+      <Skills />
+      <TechStack />
+      <Timeline />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

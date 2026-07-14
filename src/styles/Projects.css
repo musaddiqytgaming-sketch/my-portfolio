@@ -1,0 +1,194 @@
+.projects{
+    padding:100px 10%;
+}
+
+
+.projects h2{
+    text-align:center;
+    font-size:45px;
+    color:var(--primary);
+    margin-bottom:60px;
+}
+
+
+.projects-container{
+    display:flex;
+    justify-content:center;
+}
+
+
+.project-card{
+
+    max-width:650px;
+    background:rgba(30,41,59,.65);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    position:relative;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    transform-style:preserve-3d;
+
+    overflow:hidden;
+
+}
+
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 40px rgba(56,189,248,.25);
+
+}
+
+
+
+.project-badge{
+
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+}
+
+
+.project-content h3{
+    font-size:32px;
+    margin-bottom:20px;
+    padding-top:35px;
+}
+
+
+
+.project-content p{
+
+    color:var(--secondary);
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.tech-stack span{
+
+    background:#0f172a;
+
+    color:#38bdf8;
+
+    padding:8px 16px;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+    cursor:default;
+
+}
+
+
+
+.project-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+.project-buttons a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+.project-buttons a:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+.project-buttons a:first-child{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+.project-buttons a:last-child{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+
+
+@media(max-width:600px){
+
+.project-buttons{
+
+    flex-direction:column;
+
+}
+
+}

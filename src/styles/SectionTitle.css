@@ -1,0 +1,154 @@
+.section-title-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:80px;
+
+}
+
+.section-badge{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    color:#38bdf8;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    margin-bottom:25px;
+
+    animation:floatIcon 3s ease-in-out infinite;
+
+}
+
+.section-title{
+
+    font-size:52px;
+
+    font-weight:700;
+
+    background:linear-gradient(
+        90deg,
+        #38bdf8,
+        #8b5cf6,
+        #06b6d4
+    );
+
+    background-size:300%;
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:gradientMove 6s linear infinite;
+
+}
+
+.section-subtitle{
+
+    margin-top:15px;
+
+    color:#94a3b8;
+
+    max-width:700px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.section-divider{
+
+    margin-top:30px;
+
+    width:0;
+
+    height:4px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #38bdf8,
+        #8b5cf6
+    );
+
+    animation:expandLine 1.2s forwards;
+
+}
+
+@keyframes expandLine{
+
+    to{
+
+        width:180px;
+
+    }
+
+}
+
+@keyframes gradientMove{
+
+    from{
+
+        background-position:0%;
+
+    }
+
+    to{
+
+        background-position:300%;
+
+    }
+
+}
+
+@keyframes floatIcon{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
